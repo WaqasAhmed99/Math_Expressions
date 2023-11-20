@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expression</title>
+</head>
+<body>
+    <script>
+
+
+// 01
+document.write("<h3>Task 01</h3>");
+    var a = (3);
+    var b = (5);
+    var c = (a+b);
+
+document.write("Sum of " +a +" and "+b+" is "+ c + "<br><br>");
+
+
+// 02
+document.write("<h3>Task 02</h3>");
+
+var c=(a-b);
+document.write("Subtraction of " + a + " and "+ b + " is " + c + "<br><br>");
+
+var c = (a*b);
+document.write("Multiplication of " + a + " and "+ b + " is " + c + "<br><br>");
+
+var c = (a/b);
+document.write("Divition of " + a + " and "+ b + " is " + c + "<br><br>");
+
+var c = (a%b);
+document.write("Module of " + a + " and "+ b + " is " + c + "<br><br>");
+
+
+
+// 03
+document.write("<h3>Task 03</h3>");
+
+var initializeValue = (5);
+document.write("Initialize value is :" + initializeValue + "<br><br>");
+
+initializeValue = (++initializeValue);
+document.write("Value after increment is :"+initializeValue + "<br><br>");
+
+initializeValue = (initializeValue+7);
+document.write("Value after addition is: "+initializeValue + "<br><br>");
+
+initializeValue = (--initializeValue);
+document.write("Value after decrement is: " + initializeValue + "<br><br>");
+initializeValue = (initializeValue%3);
+document.write("The remainder is :"+ initializeValue + "<br><br>");
+
+
+// 04
+document.write("<h3>Task 04</h3>");
+var ticketQuantity = (5);
+var ticketPrice = (600);
+document.write("Total cost to buy " + ticketQuantity + " tickets to a movie is " + ticketQuantity*ticketPrice +" PKR");
+
+
+// 05
+document.write("<h3>Task 05</h3>");
+var tableAmount = +prompt("Write a digit to display a Table");
+document.write("<h3>Table of "+ tableAmount +"</h3>");
+document.write(tableAmount + " x 1 = " + tableAmount + "<br>");
+document.write(tableAmount + "x 2 = " + tableAmount*2 + "<br>");
+document.write(tableAmount + "x 3 = " + tableAmount*3 + "<br>");
+document.write(tableAmount + "x 4 = " + tableAmount*4 + "<br>");
+document.write(tableAmount + "x 5 = " + tableAmount*5 + "<br>");
+document.write(tableAmount + "x 6 = " + tableAmount*6 + "<br>");
+document.write(tableAmount + "x 7 = " + tableAmount*7 + "<br>");
+document.write(tableAmount + "x 8 = " + tableAmount*8 + "<br>");
+document.write(tableAmount + "x 9 = " + tableAmount*9 + "<br>");
+document.write(tableAmount + "x 10 = " + tableAmount*10 + "<br><br><br><br>");
+
+
+
+//06
+document.write("<h3>Task 06</h3>");
+// Celsius temperature
+document.write("<h5>Celsius temperature</h5>");
+var celsius = +prompt("Write a temprature in Celsius to convert Fahrenheit");
+var celsiusToFahrenheit = (celsius * 9/5) + 32;
+document.write(celsius + "°C is " + celsiusToFahrenheit + "°F");
+
+// Fahrenheit temperature
+document.write("<h5>Fahrenheit temperature</h5>");
+var fahrenheit = +prompt("Write a temprature in Fahrenheit to convert Celsius");
+var fahrenheitToCelsius = (fahrenheit - 32) * 5/9;
+document.write(fahrenheit + "°F is " + fahrenheitToCelsius + "°C" + "<br><br><br>");
+
+
+//07
+document.write("<h3>Task 07</h3>");
+document.write("<h2>Shopping Cart</h2>");
+var item_1 = (650);
+var item_2 = (100);
+var shippingCharges = (100);
+var item1Quantity = prompt("item_1 Quantity?");
+var item2Quantity = prompt("item_2 Quantity?");
+document.write("Price of item_1 is " + item_1 + "<br>");
+document.write("Quantity of item_1 is " + item1Quantity + "<br>");
+document.write("Price of item_2 is " + item_2 + "<br>");
+document.write("Quantity of item_2 is " + item2Quantity + "<br>");
+document.write("Shipping Charges" + shippingCharges + "<br>");
+document.write("Total cost of your order is ");
+document.write(item_1*item1Quantity + item_2*item2Quantity + shippingCharges);
+
+
+
+//08
+document.write("<h3>Task 08</h3>");
+document.write("<h2>Mark Sheet</h2>");
+var totalMarks = (980);
+var obtainedMarks = +prompt("Please input Your Obtained Marks");
+document.write("Total marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + obtainedMarks + "<br>");
+document.write("Percentage: ");
+document.write(obtainedMarks/totalMarks*100 + "%");
+
+
+//9
+document.write("<h3>Task 09</h3>");
+var usDollars = 10;
+var saudiRiyals = 25;
+var exchangeRateUSDToPKR = 104.80;
+var exchangeRateSARToPKR = 28;
+
+var totalPKR = (usDollars * exchangeRateUSDToPKR) + (saudiRiyals * exchangeRateSARToPKR);
+document.write("Total Currency in Pakistani Rupees: " + totalPKR + " PKR" + "<br>");
+
+
+//10
+document.write("<h3>Task 10</h3>");
+var initialValue = 7;
+var result = (((initialValue + 5) * 10) / 2);
+document.write("Result: " + result + "<br>");
+
+
+
+//11
+document.write("<h3>Task 11</h3>");
+document.write("<h2>Age Calculator</h2>");
+var currentYear = +prompt("Current Year?");
+var birthYear = +prompt("Your Birthday Year?");
+
+var yourAge = currentYear - birthYear;
+
+document.write("Current Year: " + currentYear + "<br>");
+document.write("Birthday Year: " + birthYear + "<br>");
+document.write("Your Age is: " + yourAge + "<br>");
+
+
+
+//12
+document.write("<h3>Task 12</h3>");
+document.write("<h2>The Geometrizer</h2>");
+var radius  = 20;
+var pi = 3.142;
+var circumference = 2 * pi * radius;
+var area = pi * radius * radius;
+document.write("Radius of a circle " + radius + "<br>");
+document.write("The circumference is " + circumference + "<br>");
+document.write("The area is: " + area + "<br>");
+
+
+//13
+document.write("<h3>Task 13</h3>");
+document.write("<h2>The Lifetime Supply Calculator</h2>");
+var favoriteSnack = "Dates"; 
+var currentAge = 25;
+var maximumAge = 80;
+var datesPerDay = 2;
+
+var remainingYears = maximumAge - currentAge;
+var totalSnacks = remainingYears * 365 * datesPerDay;
+
+document.write("Favourite Snack:" + favoriteSnack + "<br>")
+document.write("Current Age: " + currentAge + "<br>")
+document.write("Estimated Maximum Age: " + maximumAge + "<br>")
+document.write("Amount of Snacks per day: " + datesPerDay + "<br>")
+
+document.write("You will need " + totalSnacks + " " + favoriteSnack + "s to last you until the ripe old age of " + maximumAge + ".");
+
+    </script>
+</body>
+</html>
